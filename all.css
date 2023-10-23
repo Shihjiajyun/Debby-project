@@ -774,3 +774,19 @@ body {
         transform: translateX(0px);
     }
 }
+
+/* 在螢幕寬度小於 605px 時應用這些 CSS */
+@media (max-width: 605px) {
+    .article-container {
+        flex-direction: column;
+        /* 將排列方向變為垂直 */
+        align-items: center;
+        /* 垂直置中 */
+    }
+
+    .article1,
+    .article2 {
+        margin: 15px 0;
+        /* 15px 間距，0 表示左右間距為 0 */
+    }
+}
